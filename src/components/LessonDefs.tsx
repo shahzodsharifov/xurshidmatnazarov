@@ -27,7 +27,7 @@ function LessonDefs({lessonDefLabel, lessonDefDesc, lessonDefImageName}:LessonDe
     }
     return (
        <LessonDefContainer style={ isVlog ? {backgroundColor:"#655CED"}: {backgroundColor: "white"}}>
-           <img src={lessonImage}/>
+           <img src={lessonImage} alt=""/>
            <h2 style={isVlog ? {color: "white"}: {color: "black"}}>{lessonDefLabel}</h2>
            <p  style={isVlog ? {color: "white"}: {color: "black"}}>{lessonDefDesc}</p>
        </LessonDefContainer>

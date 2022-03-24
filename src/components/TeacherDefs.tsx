@@ -1,4 +1,4 @@
-import React, { ReactComponentElement } from "react";
+import React from "react";
 import { DefContainer, DefImage } from "../styles/Home";
 import StarIcon from "../img/star.svg"
 import ImageIcon from "../img/imageIc.svg"
@@ -26,7 +26,7 @@ function TeacherDefs({defLabel, defDesc, defImage}:TeacherDefsProps) {
     return(
         <DefContainer>
             <DefImage>
-                <img src={theImage} width="100px"/>
+                <img src={theImage} width="100px" alt=""/>
             </DefImage>
 
             <h2>{defLabel}</h2>

@@ -1,5 +1,4 @@
 import React from "react";
-import ReactPlayer from "react-player";
 import NavBar from "../components/NavBar";
 import { AdVideoContainer, VideosContainer } from "../styles/Videos";
 

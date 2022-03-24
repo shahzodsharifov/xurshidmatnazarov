@@ -1,5 +1,5 @@
 import React from "react";
-import { useRef,useState, useEffect } from "react";
+import { useState } from "react";
 import MenuIcon from "../img/MenuIcon.svg"
 import CloseIcon from "../img/closeIc.svg"
 import { BodyHeader, NavContainer } from "../styles/Home";
@@ -24,7 +24,7 @@ function NavBar() {
     </div>
         
     <button className={`btn  ${isOpen && "open"}`} onClick={()=>setOpen(!isOpen)}>
-         <img src={isOpen ? CloseIcon: MenuIcon}  />
+         <img src={isOpen ? CloseIcon: MenuIcon} alt=""  />
          </button> 
          </BodyHeader>     
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import { BodyHeader, IntroText, LabelAboutMe, LandingBtns, MainBody, MainOutlineBtn, MainSolidBtn, ProfilePic } from './styles/Home';
-import MenuIcon from "./img/MenuIcon.svg"
+import {  IntroText, LabelAboutMe, LandingBtns, MainBody, MainOutlineBtn, MainSolidBtn, ProfilePic } from './styles/Home';
 import teacherPicture from "./img/teacher.svg"
 import TeacherDefs from "./components/TeacherDefs"
 import LessonDefs from './components/LessonDefs';
@@ -33,7 +32,7 @@ function App() {
       </div>
      
      <ProfilePic>
-      <img src={teacherPicture} className="teacher-picture"/>
+      <img src={teacherPicture} className="teacher-picture" alt=""/>
      </ProfilePic>
      </div>
 
