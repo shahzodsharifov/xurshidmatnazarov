@@ -16,8 +16,8 @@ function App() {
      <div className="land-beginning">
       <div className="text-info">
       <IntroText>
-        <h1>Mening ismim Xurshid va men Ingliz tili o'qituvchisiman</h1>
-        <p>YouTube kanalimda ingliz tili mavzulari boyicha sifatli videolarim bor</p>
+        <h1>Mening ismim Xurshid va men ingliz tili o'qituvchisiman</h1>
+        <p>YouTube kanalimda ingliz tili grammatikasi bo'yicha sifatli videodarslar joylangan</p>
       </IntroText>
 
       <LandingBtns>
@@ -45,11 +45,11 @@ function App() {
 
 
     <div className="definitions">
-    <TeacherDefs defImage="Star" defLabel={"Ekspert"} defDesc={"Ingliz tili ta’limi boyicha 5+ yillik tajriba. "}/>
+    <TeacherDefs defImage="Star" defLabel={"Mutaxassis"} defDesc={"5+ yillik tajribaga va maxsus malakaga egaman "}/>
     <div className="secondDef">
-    <TeacherDefs  defImage="Image" defLabel={"Vlogger"} defDesc={"Ingliz tili boyicha qiziqarli vloglar"}/>
+    <TeacherDefs  defImage="Image" defLabel={"Vloger"} defDesc={"Ingliz tili bo'yicha qiziqarli vloglar tayyorladik"}/>
     </div>
-    <TeacherDefs  defImage="Chat" defLabel={"Yaxshi inson"} defDesc={"Hattoki faqat salom demoqchi bolsangiz ham bemalol yozavering"}/>
+    <TeacherDefs  defImage="Chat" defLabel={"Yordamga shayman"} defDesc={"Ingliz tili bo'yicha savollaringizga qo'ldan kelgancha sodda javob qaytaraman"}/>
     </div>
     <LabelAboutMe>
       <h2>Onlayn Kurslar Bilan</h2>
@@ -57,9 +57,23 @@ function App() {
   
     <div className="lessonDefs">
       
-   <LessonDefs lessonDefImageName="Study" lessonDefLabel="Xoxlagan joyda o'qing" lessonDefDesc="Darslar video formatda bolgani uchun sizga faqat istak va internet kerak"/> 
-   <LessonDefs lessonDefImageName="Vlog" lessonDefLabel="O'z tezliginigzda o'rganing" lessonDefDesc="Darslarni xohlasangiz yuklab oling va ozingzni vaqtingizga qarab ko’rishingiz mumkin"/> 
-   <LessonDefs lessonDefImageName="Chat" lessonDefLabel="Keng doiradagi mavzular" lessonDefDesc="Men ingliz tili grammatikasining asosi bo'lgan 32ta mavzuni tushuntirib otdim"/> 
+   <div onClick={()=>{
+      window.location.href = "https://youtube.com/playlist?list=PLDAYuGne_fs9PBGHRTPo8oe2qZs9noKB2"
+   }}>
+   <LessonDefs lessonDefImageName="Study" lessonDefLabel="Xohlagan joyda o'qing" lessonDefDesc="Darslar video formatda bo'lgani uchun sizga faqat istak va internet kerak"/> 
+   </div>
+
+  <div  onClick={()=>{
+      window.location.href = "https://youtube.com/playlist?list=PLDAYuGne_fs9PBGHRTPo8oe2qZs9noKB2"
+   }} >
+  <LessonDefs lessonDefImageName="Vlog" lessonDefLabel="O'z tezligingizda o'rganing" lessonDefDesc="Videodarslarni yuklab olishingiz va o'zingizga qulay paytda tomosha qilishingiz mumkin"/> 
+  </div>
+  
+   <div  onClick={()=>{
+      window.location.href = "https://youtube.com/playlist?list=PLDAYuGne_fs9PBGHRTPo8oe2qZs9noKB2"
+   }}>
+   <LessonDefs lessonDefImageName="Chat" lessonDefLabel="Keng doiradagi mavzular" lessonDefDesc="Men ingliz tili grammatikasidagi deyarli barcha mavzularni tushuntirganman"/> 
+   </div>
     </div>
 
 
